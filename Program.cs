@@ -6,6 +6,7 @@
         {
             //RectangleTester.RunCalc();
             //PersonTester.DisplayDetails();
+            //AnimalTester.Test();
 
             Console.ReadKey();
         }
