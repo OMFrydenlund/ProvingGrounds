@@ -8,11 +8,11 @@ namespace ProvingGrounds
 {
     class Dog : Animal
     {
-        public string Breed;
-
-        public Dog(string name, int age, string breed) : base(name, age)
+        public Dog(string name, int age, string breed, bool hasTail) : base(name, age, breed)
         {
-            Breed = breed;
+            HasTail = hasTail;
         }
+
+        public bool HasTail { get; set; }
     }
 }

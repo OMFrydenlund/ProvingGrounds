@@ -8,12 +8,17 @@ namespace ProvingGrounds
 {
     class Animal
     {
-        public string Name;
-        public int Age;
-        public Animal(string name, int age)
+        public Animal(string name, int age, string breed) 
         {
             Name = name;
             Age = age;
+            Breed = breed;
+
         }
+        public string Name { get; set; }
+
+        public int Age { get; set; }
+
+        public string Breed { get; set; }
     }
 }

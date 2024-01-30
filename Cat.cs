@@ -8,11 +8,10 @@ namespace ProvingGrounds
 {
     class Cat : Animal
     {
-        public string Color;
-
-        public Cat(string name, int age, string color) : base(name, age)
+        public Cat(string name, int age, string breed, bool isNeutered) : base(name, age, breed)
         {
-            Color = color;
+            IsNeutered = isNeutered;
         }
+        private bool IsNeutered { get; set; }
     }
 }
