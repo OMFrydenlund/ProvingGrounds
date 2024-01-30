@@ -7,6 +7,7 @@
             //RectangleTester.RunCalc();
             //PersonTester.DisplayDetails();
             //AnimalTester.Test();
+            //CalculatorTester.RunTests();
 
             Console.ReadKey();
         }
