@@ -10,31 +10,28 @@ namespace ProvingGrounds
     {
         public static void InputAndPrintSorted()
         {
-            int testCases = 0;
-            testCases = int.Parse(Console.ReadLine());
-            //input number dictates amount of loop calls = equivalent to amount of inputted test cases
+            int t = 0;
+            t = int.Parse(Console.ReadLine());
 
-            for (int j = 0; j < testCases; j++) //
+            for (int j = 0; j < t; j++) 
             {
-                string wordInput;
-                int stringLength;
-                wordInput = Console.ReadLine();
-                stringLength = wordInput.Length;
+                string s;
+                int n;
+                s = Console.ReadLine();
+                n = s.Length;
 
-                for (int wordIndex = 0; wordIndex < stringLength; wordIndex += 2)
-                    //i += 2 syntax loops through string counting every other index starting from 0 (even indices)
+                for (int i = 0; i < n; i += 2)
                 {
-                    Console.Write(wordInput[wordIndex]);
+                    Console.Write(s[i]);
                 }
 
                 Console.Write(" ");
-                for (int wordIndex = 1; wordIndex < stringLength; wordIndex += 2)
-                    // same logic as above, but starting index at 1 and still counting every 2nd from 1 (odd indices)
+                for (int i = 1; i < n; i += 2)
                 {
-                    Console.Write(wordInput[wordIndex]);
+                    Console.Write(s[i]);
                 }
 
-                Console.WriteLine(); //when written here, force console to write a new set of sorted results to the next line
+                Console.WriteLine();
             }
         }
     }
