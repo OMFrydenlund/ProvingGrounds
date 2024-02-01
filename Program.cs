@@ -8,6 +8,7 @@
             //PersonTester.DisplayDetails();
             //AnimalTester.Test();
             //CalculatorTester.RunTests();
+            //GetAndSortString.InputAndPrintSorted();
 
             Console.ReadKey();
         }
